@@ -1,53 +1,30 @@
 import React from 'react';
 import Twitch from './components/twitch-embed';
 import Youtube from './components/youtube-embed';
+import SocialLink from './components/socials-link';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src="https://res.cloudinary.com/complexityguild/image/upload/v1600567287/seanVR/seanVRLogo.png" className="App-logo" alt="logo" />
+        <img src="https://seanvr.s3-us-west-2.amazonaws.com/seanVRLogo.png" className="App-logo" alt="logo" />
       </header>
       <div id="socials-large" className="flex-row-evenly">
-        <a href="https://discord.gg/seanvr">
-          <img src="https://res.cloudinary.com/complexityguild/image/upload/v1600638077/seanVR/discord_full.png" alt="discord" />
-        </a>
-        <a href="https://www.instagram.com/seanvrvr/">
-          <img src="https://res.cloudinary.com/complexityguild/image/upload/v1600629584/seanVR/instagram_full.png" alt="instagram" />
-        </a>
-        <a href="https://www.tiktok.com/@sean_vr1">
-          <img src="https://res.cloudinary.com/complexityguild/image/upload/v1600633516/seanVR/tiktok_full.png" alt="tiktok" />
-        </a>
-        <a href="https://www.twitch.tv/sean_vr">
-          <img src="https://res.cloudinary.com/complexityguild/image/upload/v1600635993/seanVR/twitch_full.png" alt="twitchtv" />
-        </a>
-        <a href="https://twitter.com/SeanVr1/">
-          <img src="https://res.cloudinary.com/complexityguild/image/upload/v1600636524/seanVR/twitter_full.png" alt="twitter" />
-        </a>
-        <a href="https://www.youtube.com/channel/UCTXez3yD0FbdgCuYwBlbrnQ">
-          <img src="https://res.cloudinary.com/complexityguild/image/upload/v1600636873/seanVR/youtube_full.png" alt="youtube" />
-        </a>
+        <SocialLink link="https://discord.gg/seanvr" image="discord_full.png" alt="discord" />
+        <SocialLink link="https://www.instagram.com/seanvrvr/" image="instagram_full.png" alt="instagram" />
+        <SocialLink link="https://www.tiktok.com/@sean_vr1" image="tiktok_full.png" alt="tiktok" />
+        <SocialLink link="https://www.twitch.tv/sean_vr" image="twitch_full.png" alt="twitchtv" />
+        <SocialLink link="https://twitter.com/SeanVr1/" image="twitter_full.png" alt="twitter" />
+        <SocialLink link="https://www.youtube.com/channel/UCTXez3yD0FbdgCuYwBlbrnQ" image="youtube_full.png" alt="youtube" />
       </div>
       <div id="socials-mini" className="flex-row-evenly">
-        <a href="https://discord.gg/seanvr">
-          <img src="https://res.cloudinary.com/complexityguild/image/upload/v1600638077/seanVR/discord_logo.png" alt="discord" />
-        </a>
-        <a href="https://www.instagram.com/seanvrvr/">
-          <img src="https://res.cloudinary.com/complexityguild/image/upload/v1600630356/seanVR/instagram_logo.png" alt="instagram" />
-        </a>
-        <a href="https://www.tiktok.com/@sean_vr1">
-          <img src="https://res.cloudinary.com/complexityguild/image/upload/v1600633516/seanVR/tiktok_logo.png" alt="tiktok" />
-        </a>
-        <a href="https://www.twitch.tv/sean_vr">
-          <img src="https://res.cloudinary.com/complexityguild/image/upload/v1600635737/seanVR/twitch_logo.png" alt="twitchtv" />
-        </a>
-        <a href="https://twitter.com/SeanVr1/">
-          <img src="https://res.cloudinary.com/complexityguild/image/upload/v1600636524/seanVR/twitter_logo.png" alt="twitter" />
-        </a>
-        <a href="https://www.youtube.com/channel/UCTXez3yD0FbdgCuYwBlbrnQ">
-          <img src="https://res.cloudinary.com/complexityguild/image/upload/v1600636873/seanVR/youtube_logo.png" alt="youtube" />
-        </a>
+        <SocialLink link="https://discord.gg/seanvr" image="discord_logo.png" alt="discord" />
+        <SocialLink link="https://www.instagram.com/seanvrvr/" image="instagram_logo.png" alt="instagram" />
+        <SocialLink link="https://www.tiktok.com/@sean_vr1" image="tiktok_logo.png" alt="tiktok" />
+        <SocialLink link="https://www.twitch.tv/sean_vr" image="twitch_logo.png" alt="twitchtv" />
+        <SocialLink link="https://twitter.com/SeanVr1/" image="twitter_logo.png" alt="twitter" />
+        <SocialLink link="https://www.youtube.com/channel/UCTXez3yD0FbdgCuYwBlbrnQ" image="youtube_logo.png" alt="youtube" />
       </div>
       <div className="flex-row-evenly">
         <div id="col1" className="two-row-col">
