@@ -14,10 +14,13 @@
     animation: App-logo-spin infinite 20s linear;
   } */
 }
+
 /*
-BLUE = #398AE3
-PINK = #F41B89
+Sean's Colors
+  BLUE = #398AE3
+  PINK = #F41B89
 */
+
 .App-header {
   height: 200px;
   width: 100%;
@@ -48,6 +51,7 @@ a {
 }
 
 .two-row-col {
+  max-width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,12 +86,10 @@ a {
 }
 
 #socials-large {
-  margin: 10px;
   flex-direction: row;
 }
 
 #socials-mini {
-  margin: 10px;
   flex-direction: row;
   flex-wrap: wrap;
   display: none;
@@ -142,6 +144,11 @@ a {
     width: calc(100vw - 20px);
     height: calc((100vw - 20px) * 529 / 940)
   }
+
+  .socials-embeds {
+    flex-direction: column;
+  }
+
 }
 
 @media only screen and (max-width: 760px) {
