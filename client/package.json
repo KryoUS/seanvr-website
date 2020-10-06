@@ -1,5 +1,5 @@
 {
-  "name": "website",
+  "name": "SeanVR",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,12 +15,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "react-scripts build && nodemon ../index.js"
+    "dev": "react-scripts build && nodemon ../index.js",
+    "deploy-production": "react-scripts build && scp -r ./build/* jerry@159.65.76.135:/var/www/seanvr.net/htm"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "proxy": "http://localhost:5000",
   "browserslist": {
     "production": [
       ">0.2%",
