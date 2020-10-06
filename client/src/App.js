@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src="https://assets.seanvr.net/seanVRLogo.png" className="App-logo" alt="logo" />
+        <img src="https://d3mb8zw3wuinah.cloudfront.net/seanVRLogo.png" className="App-logo" alt="logo" />
       </header>
       <div id="socials-large" className="flex-row-evenly">
         <SocialLink link="https://discord.gg/seanvr" image="discord_full.png" alt="discord" />
@@ -40,7 +40,7 @@ function App() {
       <div className="gradient-line-black" />
       <div className="flex-row-evenly">
         <div id="about-header">About Me</div>
-        <img id="about-image" src="https://assets.seanvr.net/seanVRAboutMe.png" alt="about SeanVR" />
+        <img id="about-image" src="https://d3mb8zw3wuinah.cloudfront.net/seanVRAboutMe.png" alt="about SeanVR" />
         <div id="about-text-container">
           <p id="about-text">
             Hello! Im Sean, the small sassy Scottish Fox who goes on crazy adventures, always says the wrong thing, and gets in trouble with his friends.
