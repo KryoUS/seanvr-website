@@ -55,6 +55,10 @@ function App() {
         <a className="twitter-timeline" data-height="600" data-width="400" data-theme="dark" href="https://twitter.com/SeanVr1?ref_src=twsrc%5Etfw">Tweets by SeanVr</a>
         <iframe title="discord-embed" src="https://discordapp.com/widget?id=540600422185041936&theme=dark" width="400" height="600" allowtransparency="true" frameBorder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
       </div>
+      <div className="flex-row-evenly">
+        <div className="credits">Created with love by <a href="https://taurussho89.wixsite.com/portfolio">KryoUS</a> | 
+        Artwork by <a href="https://lilyth.art/">Lilyth.Art</a> | Coloring by <a href="https://tanksi.art/">Tanksi</a></div>
+      </div>
     </div>
   );
 }
