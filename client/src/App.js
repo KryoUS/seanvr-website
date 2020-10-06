@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src="https://seanvr.s3-us-west-2.amazonaws.com/seanVRLogo.png" className="App-logo" alt="logo" />
+        <img src="https://assets.seanvr.net/seanVRLogo.png" className="App-logo" alt="logo" />
       </header>
       <div id="socials-large" className="flex-row-evenly">
         <SocialLink link="https://discord.gg/seanvr" image="discord_full.png" alt="discord" />
@@ -37,9 +37,23 @@ function App() {
           <Youtube index={3} />
         </div>
       </div>
+      <div className="gradient-line-black" />
+      <div className="flex-row-evenly">
+        <div id="about-header">About Me</div>
+        <img id="about-image" src="https://assets.seanvr.net/seanVRAboutMe.png" alt="about SeanVR" />
+        <div id="about-text-container">
+          <p id="about-text">
+            Hello! Im Sean, the small sassy Scottish Fox who goes on crazy adventures, always says the wrong thing, and gets in trouble with his friends.
+            Im a full time streamer on Twitch.tv, a content creator on Youtube and TikTok, and am part of a wonderful community ran by my friends on Discord.
+            <br/><br/>
+            Come, join me as I adventure through VRChat with my friends as we explore crazy worlds and push the limits on Terms of Service.
+          </p>
+        </div>
+      </div>
+      <div className="gradient-line-black" />
       <div className="socials-embeds">
-        <a className="twitter-timeline" data-height="600" data-width="400" href="https://twitter.com/SeanVr1?ref_src=twsrc%5Etfw">Tweets by SeanVr</a>
-        <iframe title="discord-embed" src="https://discordapp.com/widget?id=540600422185041936&theme=dark" width="400" height="600" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        <a className="twitter-timeline" data-height="600" data-width="400" data-theme="dark" href="https://twitter.com/SeanVr1?ref_src=twsrc%5Etfw">Tweets by SeanVr</a>
+        <iframe title="discord-embed" src="https://discordapp.com/widget?id=540600422185041936&theme=dark" width="400" height="600" allowtransparency="true" frameBorder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
       </div>
     </div>
   );

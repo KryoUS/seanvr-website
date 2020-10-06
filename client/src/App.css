@@ -5,14 +5,11 @@
 }
 
 .App-logo {
+  display: inline-block;
   height: 100px;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  /* .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  } */
+  /* -webkit-animation: wiggle 2.5s infinite;
+  animation: wiggle 2s infinite; */
 }
 
 /*
@@ -23,12 +20,41 @@ Sean's Colors
 
 .App-header {
   height: 200px;
-  width: 100%;
+  width: 98%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   color: #ffffff;
+}
+
+.gradient-line-black { 
+  height: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: black;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 5%,black 35%,black 65%, rgba(255, 255, 255, 0) 95%);
+}
+
+.gradient-line-white {
+  display: none; 
+  height: 6px;
+  background: white;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 5%,white 35%,white 65%, rgba(255, 255, 255, 0) 95%);
+}
+
+.gradient-line-blue { 
+  display: none;
+  height: 4px;
+  background:  #398AE3;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #398AE3 35%, #398AE3 65%, rgba(255, 255, 255, 0) 100%);
+}
+
+.gradient-line-pink { 
+  display: none;
+  height: 2px;
+  background: #F41B89;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%,  #F41B89 35%,  #F41B89 65%, rgba(255, 255, 255, 0) 100%);
 }
 
 .App-link {
@@ -43,11 +69,20 @@ a {
 }
 
 .flex-row-evenly {
-  width: 100%;
+  width: 98%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.flex-row-center {
+  width: 98%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .two-row-col {
@@ -64,7 +99,7 @@ a {
 }
 
 .socials-embeds {
-  width: 100%;
+  width: 98%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -93,6 +128,35 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   display: none;
+}
+
+#about-header {
+  width: 100%;
+  color: white;
+  font-family: 'Fredoka One', cursive;
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: 1px 1px 4px black;
+  pointer-events: none;
+}
+
+#about-image {
+  width: 800px;
+}
+
+#about-text {
+  display: inline;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.8rem;
+  color: white;
+  background-color: black;
+  box-shadow: 0.1em 0 0 black, -0.1em 0 0 black;
+  box-decoration-break: clone;
+  line-height: 1.5;
+}
+
+#about-text-container {
+  width: 800px;
 }
 
 @media only screen and (max-width: 1655px) {
@@ -149,6 +213,14 @@ a {
     flex-direction: column;
   }
 
+  #about-text-container {
+    width: calc(100vw - 20px);
+  }
+
+  #about-image {
+    width: calc(100vw - 20px);
+  }
+
 }
 
 @media only screen and (max-width: 760px) {
@@ -175,13 +247,18 @@ a {
   .App-header {
     height: 100px;
   }
+
+  #about-text {
+    font-size: 1rem;
+  }
 }
 
-@keyframes App-logo-spin {
+@keyframes wiggle {
   from {
-    transform: rotate(0deg);
+    transform: rotate(2.5deg);
   }
+  50% { transform: rotate(-2.5deg); }
   to {
-    transform: rotate(360deg);
+    transform: rotate(2.5deg);
   }
 }
