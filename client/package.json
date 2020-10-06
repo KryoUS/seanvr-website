@@ -16,7 +16,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "dev": "react-scripts build && nodemon ../index.js",
-    "deploy-production": "react-scripts build && scp -r ./build/* jerry@159.65.76.135:/var/www/seanvr.net/htm"
+    "deploy-production": "react-scripts build && scp -r ./build/* jerry@159.65.76.135:/var/www/seanvr.net/html"
   },
   "eslintConfig": {
     "extends": "react-app"
