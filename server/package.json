@@ -6,7 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["seanvr", "sean_vr", "virtual reality", "vr", "streamer", "streaming", "vrchat", "videos", "entertainment"],
+  "keywords": [
+    "seanvr",
+    "sean_vr",
+    "virtual reality",
+    "vr",
+    "streamer",
+    "streaming",
+    "vrchat",
+    "videos",
+    "entertainment"
+  ],
   "author": "KryoUS",
   "license": "ISC",
   "dependencies": {
