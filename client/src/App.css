@@ -7,9 +7,14 @@
 .App-logo {
   display: inline-block;
   height: 100px;
-  pointer-events: none;
-  /* -webkit-animation: wiggle 2.5s infinite;
-  animation: wiggle 2s infinite; */
+}
+
+.App-logo:hover {
+  animation: wiggle 2.5s infinite;
+  -webkit-animation: wiggle 2.5s infinite;
+  -moz-animation: wiggle 2.5s infinite;
+  -o-animation: wiggle 2.5s infinite;
+  -ms-animation: wiggle 2.5s infinite;
 }
 
 /*
@@ -20,7 +25,7 @@ Sean's Colors
 
 .App-header {
   height: 200px;
-  width: 98%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -69,7 +74,7 @@ a {
 }
 
 .flex-row-evenly {
-  width: 98%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -78,7 +83,7 @@ a {
 }
 
 .flex-row-center {
-  width: 98%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -94,12 +99,18 @@ a {
 }
 
 .video-frame {
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border: 1px solid black;
+  animation: fadeIn ease-in-out 3s;
+  -webkit-animation: fadeIn ease-in-out 3s;
+  -moz-animation: fadeIn ease-in-out 3s;
+  -o-animation: fadeIn ease-in-out 3s;
+  -ms-animation: fadeIn ease-in-out 3s;
 }
 
 .socials-embeds {
-  width: 98%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -272,11 +283,33 @@ a {
 }
 
 @keyframes wiggle {
-  from {
-    transform: rotate(2.5deg);
-  }
-  50% { transform: rotate(-2.5deg); }
-  to {
-    transform: rotate(2.5deg);
-  }
+  from { transform: rotate(0deg); }
+  25% { transform: rotate(2.5deg); }
+  75% { transform: rotate(-2.5deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
