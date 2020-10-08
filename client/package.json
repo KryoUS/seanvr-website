@@ -16,7 +16,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "dev": "react-scripts build && nodemon ../server/index.js",
-    "deploy-production": "react-scripts build && scp -r ./build/* jerry@159.65.76.135:/var/www/seanvr.net/html"
+    "deploy-production": "react-scripts build && scp -r ./build/* jerry@159.65.76.135:/app/seanvr-website/client/build"
   },
   "proxy": "http://localhost:5000",
   "eslintConfig": {
