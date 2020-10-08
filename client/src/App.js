@@ -3,12 +3,29 @@ import Twitch from './components/twitch-embed';
 import Youtube from './components/youtube-embed';
 import SocialLink from './components/socials-link';
 import './App.css';
+import './Nav.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src="https://d3mb8zw3wuinah.cloudfront.net/seanVRLogo.png" className="App-logo" alt="logo" />
+        <nav role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <SocialLink link="https://discord.gg/seanvr" image="discord_full.png" alt="discord" />
+              <SocialLink link="https://www.instagram.com/seanvrvr/" image="instagram_full.png" alt="instagram" />
+              <SocialLink link="https://www.tiktok.com/@sean_vr1" image="tiktok_full.png" alt="tiktok" />
+              <SocialLink link="https://www.twitch.tv/sean_vr" image="twitch_full.png" alt="twitchtv" />
+              <SocialLink link="https://twitter.com/SeanVr1/" image="twitter_full.png" alt="twitter" />
+              <SocialLink link="https://www.youtube.com/channel/UCTXez3yD0FbdgCuYwBlbrnQ" image="youtube_full.png" alt="youtube" />
+            </ul>
+          </div>
+        </nav>
       </header>
       <div id="socials-large" className="flex-row-evenly">
         <SocialLink link="https://discord.gg/seanvr" image="discord_full.png" alt="discord" />
