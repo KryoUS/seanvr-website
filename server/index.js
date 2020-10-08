@@ -8,13 +8,20 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, '../client/build')));
 
-
 app.get("/", (req, res) => {
-    return res.sendFile(path.join(__dirname + "/../client/build/index.html"));
+    if (process.env.DEV === true) {
+        return res.sendFile(path.join(__dirname + "/../client/build/index.html"));
+    } else {
+        return res.sendFile(path.join(__dirname + "/client/build/index.html"));
+    }
 });
 
 app.all("*", (req, res) => {
-    return res.sendFile(path.join(__dirname + "/../client/build/index.html"));
+    if (process.env.DEV === true) {
+        return res.sendFile(path.join(__dirname + "/../client/build/index.html"));
+    } else {
+        return res.sendFile(path.join(__dirname + "/client/build/index.html"));
+    }
 });
 
 const port = process.env.PORT || 5000;
