@@ -10,11 +10,11 @@ app.use(express.static(path.join(__dirname, '../client/build')));
 
 
 app.get("/", (req, res) => {
-    return res.sendFile(path.join(__dirname + "/client/build/index.html"));
+    return res.sendFile(path.join(__dirname + "/../client/build/index.html"));
 });
 
 app.all("*", (req, res) => {
-    return res.sendFile(path.join(__dirname + "/client/build/index.html"));
+    return res.sendFile(path.join(__dirname + "/../client/build/index.html"));
 });
 
 const port = process.env.PORT || 5000;
