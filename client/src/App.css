@@ -101,6 +101,8 @@ a {
 .video-frame {
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   border: 1px solid black;
   animation: fadeIn ease-in-out 3s;
   -webkit-animation: fadeIn ease-in-out 3s;
@@ -265,6 +267,11 @@ a {
   #youtube {
     height: calc((100vw - 20px) * 197 / 350);
     width: calc(100vw - 20px);
+  }
+
+  .video-frame {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
