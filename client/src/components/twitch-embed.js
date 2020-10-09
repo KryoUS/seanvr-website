@@ -31,7 +31,7 @@ TwitchEmbed.defaultProps = {
     width: '100%',
     height: '100%',
     layout: 'video',
-    parent: 'https://seanvr.net'
+    parent: 'seanvr.net'
 }
 
 export default TwitchEmbed;
