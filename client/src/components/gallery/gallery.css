@@ -3,6 +3,10 @@
     height: auto !important;
 }
 
+.image-gallery-slide:focus {
+    outline: none;
+}
+
 .image-gallery-slide img {
     width: 80% !important;
     height: 100vh !important;
