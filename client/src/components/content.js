@@ -3,6 +3,7 @@ import useScript from './hooks/useScript'
 import Twitch from './twitch-embed';
 import Youtube from './youtube-embed';
 import SocialLink from './socials-link';
+import Gallery from './gallery/gallery';
 
 function Content() {
   useScript('https://platform.twitter.com/widgets.js');
@@ -59,7 +60,7 @@ function Content() {
       </div>
       <div className="gradient-line-black" />
       <div className="flex-row-evenly">
-        <div id="about-header">About Me</div>
+        <div id="section-title">About Me</div>
         <img id="about-image" src="https://d3mb8zw3wuinah.cloudfront.net/seanVRAboutMe.png" alt="about SeanVR" />
         <div id="about-text-container">
           <p id="about-text">
@@ -70,6 +71,8 @@ function Content() {
           </p>
         </div>
       </div>
+      <div className="gradient-line-black" />
+      <Gallery />
       <div className="gradient-line-black" />
       <div className="socials-embeds">
         <a className="twitter-timeline" data-height="600" data-width="400" data-theme="dark" href="https://twitter.com/SeanVr1?ref_src=twsrc%5Etfw">Tweets by SeanVr</a>
