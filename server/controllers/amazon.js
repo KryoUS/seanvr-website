@@ -15,13 +15,22 @@ module.exports = {
             if (err) {
                 console.log(new Date(), "-Amazon S3 Error!-", err);
             } else {
-                bucketList = data;
+                bucketList = data.Contents.filter((obj, index, arr) => {
+                    return obj.Size > 0;
+                });
+
+                bucketList.forEach((obj, index, object) => {
+                    if (obj.Size !== 0) {
+                        obj.original = `https://d3mb8zw3wuinah.cloudfront.net/${obj.Key}`;
+                        obj.thumbnail = `https://d3mb8zw3wuinah.cloudfront.net/${obj.Key}`;
+                    }
+                });
             }
         });
     },
 
     getList: (req, res) => {
-        if (bucketList.Contents) {
+        if (bucketList.length > 0) {
             res.send(bucketList);
         } else {
             res.status(500).send('Unable to retrieve Gallery at this time.');
