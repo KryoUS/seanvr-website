@@ -1,5 +1,5 @@
 import React from 'react';
-import Warning from './components/warning';
+import Warning from './components/warning/warning';
 import './App.css';
 import './Nav.css';
 
