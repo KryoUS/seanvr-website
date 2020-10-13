@@ -207,13 +207,13 @@ Sean's Colors
   width: 800px;
 }
 
-@media only screen and (max-width: 1655px) {
+@media only screen and (max-width: 1710px) {
 
-  a {
+  .social-link {
     width: auto;
   }
 
-  a img {
+  .social-link img {
     height: 35px;
   }
 
@@ -311,10 +311,6 @@ Sean's Colors
     background-color: #64c6ff;
     height: 80px;
     margin-bottom: 10px;
-  }
-
-  .App-logo {
-    height: 25px;
   }
 
   #about-text {
