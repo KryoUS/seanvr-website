@@ -141,13 +141,6 @@ Sean's Colors
   color: #61dafb;
 }
 
-a {
-  width: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .flex-row-evenly {
   width: 100%;
   display: flex;
@@ -184,6 +177,13 @@ a {
   -moz-animation: fadeIn ease-in-out 3s;
   -o-animation: fadeIn ease-in-out 3s;
   -ms-animation: fadeIn ease-in-out 3s;
+}
+
+.social-link {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .socials-embeds {
