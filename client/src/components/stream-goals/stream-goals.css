@@ -1,0 +1,79 @@
+.stream-goals {
+    max-width: 100%;
+}
+
+#stream-goals-container {
+    width: auto !important;
+    flex-direction: column;
+}
+
+.stream-goals-header {
+    padding: 5px;
+    width: auto !important;
+    color: #000000;
+    font-size: 2rem;
+    font-weight: bolder;
+    border: 1px solid transparent;
+}
+
+.stream-goals-row {
+    padding: 5px;
+    width: auto !important;
+    font-size: 1.75rem;
+    align-items: flex-start !important;
+    background-color:#398be385;
+    border: 1px solid black;
+}
+
+#stream-goals-container .stream-goals-row:nth-child(odd) {
+    background-color:#f41b8896;
+}
+
+#stream-goals-cell {
+    max-width: 100px;
+    min-width: 100px;
+}
+
+#stream-goals-med-cell {
+    max-width: 150px;
+    min-width: 150px;
+}
+
+#stream-goals-big-cell {
+    max-width: 400px;
+    min-width: 400px;
+}
+
+.stream-goals-cell {
+    font-family: 'Fredoka One', cursive;
+}
+  
+@media only screen and (max-width: 760px) {
+    
+    #stream-goals-title {
+        font-size: 3rem;
+    }
+    
+    .stream-goals-header {
+        font-size: 1rem;
+    }
+
+    .stream-goals-row {
+        font-size: 0.75rem;
+    }
+
+    #stream-goals-cell {
+        max-width: 50px;
+        min-width: 50px;
+    }
+    
+    #stream-goals-med-cell {
+        max-width: 75px;
+        min-width: 75px;
+    }
+    
+    #stream-goals-big-cell {
+        max-width: 200px;
+        min-width: 200px;
+    }
+}

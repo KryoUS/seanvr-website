@@ -4,6 +4,7 @@ import Twitch from './twitch-embed';
 import Youtube from './youtube-embed';
 import SocialLink from './socials-link';
 import Gallery from './gallery/gallery';
+import StreamGoals from './stream-goals/stream-goals';
 
 function Content() {
   useScript('https://platform.twitter.com/widgets.js');
@@ -60,7 +61,7 @@ function Content() {
       </div>
       <div className="gradient-line-black" />
       <div className="flex-row-evenly">
-        <div id="section-title">About Me</div>
+        <div className="section-title">About Me</div>
         <img id="about-image" src="https://d3mb8zw3wuinah.cloudfront.net/seanVRAboutMe.png" alt="about SeanVR" />
         <div id="about-text-container">
           <p id="about-text">
@@ -71,6 +72,8 @@ function Content() {
           </p>
         </div>
       </div>
+      <div className="gradient-line-black" />
+      <StreamGoals />
       <div className="gradient-line-black" />
       <Gallery />
       <div className="gradient-line-black" />
