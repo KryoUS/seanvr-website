@@ -74,6 +74,7 @@ class Gallery extends React.Component {
                             >
                             </div>
                             <iframe
+                                title={item.description ? `Twitch Embed - ${item.description}` : `Twitch Embed - ${item.embedUrl}`}
                                 width='100%'
                                 height='100%'
                                 src={item.embedUrl}
@@ -86,7 +87,7 @@ class Gallery extends React.Component {
                         :
                         <div className='video-wrapper' onClick={this._toggleShowVideo.bind(this, item.embedUrl)}>
                             <div className='play-button'></div>
-                            <img className='image-gallery-image' src={item.original} />
+                            <img className='image-gallery-image' src={item.original} alt={`Twitch Embed - ${item.description}`} />
                             {
                                 item.description &&
                                 <span
