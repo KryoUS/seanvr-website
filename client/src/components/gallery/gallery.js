@@ -105,7 +105,7 @@ class Gallery extends React.Component {
 
     render() {
         return <div className="flex-row-evenly">
-            <div id="section-title">Gallery</div>
+            <div className="section-title">Gallery</div>
             <div id="gallery-container" className="flex-row-center">
                 {this.state.gallery.length > 1 ?
                     <ImageGallery
