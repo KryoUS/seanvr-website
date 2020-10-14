@@ -1,15 +1,10 @@
 .warning-modal {
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    align-self: center;
     background: linear-gradient(135deg, #ffffff 25%,  #398ae3 26% ,#398ae3 44%, #f41b89 45%, #f41b89 55%, #398ae3 56%, #398ae3 74%, #ffffff 75%) no-repeat fixed center;
 }
 
@@ -87,7 +82,7 @@
 }
 
 @media only screen and (max-width: 760px) {
-
+    
 }
 
 @media only screen and (max-width: 484px) {
