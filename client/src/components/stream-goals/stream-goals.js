@@ -28,7 +28,7 @@ class StreamGoals extends React.Component {
 
     render() {
         return (
-            <div className="stream-goals">
+            <div className="stream-goals" ref={this.props.goalsRef}>
                 <div id="stream-goals-title" className="section-title">Stream Goals</div>
                 <div id="stream-goals-container" className="flex-row-center">
                     <div className="stream-goals-header flex-row-center">
