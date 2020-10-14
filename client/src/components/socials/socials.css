@@ -1,0 +1,49 @@
+svg {
+    display: block;
+}
+
+.socials-container {
+    display: flex;
+    justify-content: row;
+    height: 30px;
+    /* position: absolute;
+    top: 10px;
+    right: 0; */
+}
+
+.socials-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    padding: 5px;
+    background: linear-gradient(-45deg, #398ae3, #f41b89);
+    box-shadow: 2px 2px 10px black;
+    border-radius: 7px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.socials-icon:hover > .icon {
+    transform: rotate(360deg);
+}
+
+.icon path {
+    fill: white;
+}
+
+@media only screen and (max-width: 760px) {
+    .socials-container {
+        /* width: 100%;
+        margin-top: 10px;
+        justify-content: space-evenly;
+        position: static;         */
+    }
+}
