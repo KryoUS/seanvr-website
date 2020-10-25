@@ -6,9 +6,6 @@ svg {
     display: flex;
     justify-content: row;
     height: 30px;
-    /* position: absolute;
-    top: 10px;
-    right: 0; */
 }
 
 .socials-icon {
@@ -37,13 +34,4 @@ svg {
 
 .icon path {
     fill: white;
-}
-
-@media only screen and (max-width: 760px) {
-    .socials-container {
-        /* width: 100%;
-        margin-top: 10px;
-        justify-content: space-evenly;
-        position: static;         */
-    }
 }
