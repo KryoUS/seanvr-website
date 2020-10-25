@@ -5,6 +5,7 @@ import Youtube from './youtube-embed';
 import Twitter from './twitter-embed/twitter-embed';
 import Gallery from './gallery/gallery';
 import StreamGoals from './stream-goals/stream-goals';
+import ScrollArrow from './scroll-top/scroll-top';
 
 class Content extends React.Component {
   constructor() {
@@ -60,6 +61,7 @@ class Content extends React.Component {
           <div className="credits">Created with love by <a href="https://taurussho89.wixsite.com/portfolio">KryoUS</a> |
           Artwork by <a href="https://lilyth.art/">Lilyth.Art</a> | Coloring by <a href="https://tanksi.art/">Tanksi</a></div>
         </div>
+        <ScrollArrow />
       </div>
     );
   }
