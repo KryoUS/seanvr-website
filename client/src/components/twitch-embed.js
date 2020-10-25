@@ -4,7 +4,6 @@ const EMBED_URL = 'https://embed.twitch.tv/embed/v1.js';
 
 class TwitchEmbed extends React.Component {
     componentDidMount() {
-        // eslint-disable-next-line
         let embed;
         const script = document.createElement('script');
         script.setAttribute(
@@ -13,6 +12,7 @@ class TwitchEmbed extends React.Component {
         );
         
         script.addEventListener('load', () => {
+            // eslint-disable-next-line
             embed = new window.Twitch.Embed(this.props.targetID, { ...this.props });
         });
         
