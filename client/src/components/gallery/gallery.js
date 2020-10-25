@@ -107,7 +107,7 @@ class Gallery extends React.Component {
         return <div className="flex-row-evenly" ref={this.props.galleryRef}>
             <div className="section-title">Gallery</div>
             <div id="gallery-container" className="flex-row-center">
-                {this.state.gallery.length > 1 ?
+                {this.state.gallery.length > 0 ?
                     <ImageGallery
                         items={this.state.gallery}
                         lazyLoad={true}
