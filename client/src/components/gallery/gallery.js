@@ -112,7 +112,7 @@ class Gallery extends React.Component {
                         items={this.state.gallery}
                         lazyLoad={true}
                         onSlide={this._onSlide.bind(this)}
-                        showBullets={true}
+                        showBullets={this.state.gallery.length < 30 ? true : false}
                         additionalClass="app-image-gallery"
                     /> :
                     <Loader />}
