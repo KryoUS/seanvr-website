@@ -20,16 +20,16 @@ class Gallery extends React.Component {
     componentDidMount = () => {
         axios.get('/api/gallery').then(res => {
 
-            let data = res.data;
+            // let data = res.data;
 
-            data.push({
-                original: "https://clips-media-assets2.twitch.tv/AT-cm%7C859314223-preview.jpg",
-                thumbnail: "https://clips-media-assets2.twitch.tv/AT-cm%7C859314223-preview.jpg",
-                embedUrl: 'https://clips.twitch.tv/embed?clip=HedonisticTangentialGazelleFrankerZ&parent=localhost',
-                description: "Lone is definitely trying to seduce chat",
-                renderItem: this._renderVideo.bind(this)
-            });
-            this.setState({ gallery: data });
+            // data.push({
+            //     original: "https://clips-media-assets2.twitch.tv/AT-cm%7C859314223-preview.jpg",
+            //     thumbnail: "https://clips-media-assets2.twitch.tv/AT-cm%7C859314223-preview.jpg",
+            //     embedUrl: 'https://clips.twitch.tv/embed?clip=HedonisticTangentialGazelleFrankerZ&parent=localhost',
+            //     description: "Lone is definitely trying to seduce chat",
+            //     renderItem: this._renderVideo.bind(this)
+            // });
+            this.setState({ gallery: res.data });
 
         }).catch(err => {
             this.setState({ showError: true });
