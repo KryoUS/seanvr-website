@@ -114,9 +114,13 @@ class Gallery extends React.Component {
                         onSlide={this._onSlide.bind(this)}
                         showBullets={this.state.gallery.length < 30 ? true : false}
                         additionalClass="app-image-gallery"
-                    /> :
-                    <Loader />}
-                {this.state.showError && <div>ERROR MODAL GOES HERE</div>}
+                    /> 
+                    :
+                    this.state.showError ? 
+                        <div style={{color: 'yellow', fontSize: '1.5rem'}} className="section-title">There was an error loading the gallery!<br/>Please try again later...</div> 
+                        : 
+                        <Loader />
+                }
             </div>
         </div>
     }
