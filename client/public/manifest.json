@@ -3,9 +3,9 @@
   "name": "SeanVR",
   "icons": [
     {
-      "src": "seanvrLove.png",
-      "sizes": "144x144",
-      "type": "image/png"
+      "src": "seanLove.png",
+      "sizes": "112x112",
+      "type": "image/jpg"
     }
   ],
   "start_url": ".",
