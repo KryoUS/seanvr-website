@@ -26,13 +26,13 @@ class Content extends React.Component {
         <Nav refScroll={this.refScroll} />
         <div className="flex-row-evenly app-section main-embeds">
           <div id="col1" className="two-row-col">
-            <Youtube index={0} />
             <Youtube index={1} />
+            <Youtube index={2} />
           </div>
           <Twitch channel={'sean_vr'} />
           <div id="col3" className="two-row-col">
-            <Youtube index={2} />
             <Youtube index={3} />
+            <Youtube index={4} />
           </div>
         </div>
         <div className="gradient-line-black" />
