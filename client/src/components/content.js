@@ -29,7 +29,7 @@ class Content extends React.Component {
             <Youtube index={1} />
             <Youtube index={2} />
           </div>
-          <Twitch channel={'sean_vr'} />
+          <Twitch channel={'seanvr'} />
           <div id="col3" className="two-row-col">
             <Youtube index={3} />
             <Youtube index={4} />

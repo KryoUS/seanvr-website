@@ -13,7 +13,7 @@ function Socials() {
             <a href="https://discord.gg/seanvr" className="socials-icon" ><DiscordIcon className="icon" /></a>
             <a href="https://www.instagram.com/seanvrvr/" className="socials-icon" ><InstagramIcon className="icon" /></a>
             <a href="https://www.tiktok.com/@sean_vr1" className="socials-icon" ><TikTokIcon className="icon" /></a>
-            <a href="https://www.twitch.tv/sean_vr" className="socials-icon" ><TwitchIcon className="icon" /></a>
+            <a href="https://www.twitch.tv/seanvr" className="socials-icon" ><TwitchIcon className="icon" /></a>
             <a href="https://twitter.com/SeanVr1/" className="socials-icon" ><TwitterIcon className="icon" /></a>
             <a href="https://www.youtube.com/channel/UCTXez3yD0FbdgCuYwBlbrnQ" className="socials-icon" ><YoutubeIcon className="icon" /></a>
         </div>
